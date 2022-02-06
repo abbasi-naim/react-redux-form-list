@@ -1,5 +1,6 @@
 import React from "react";
 import { Field, reduxForm } from "redux-form";
+import Users from "./Users";
 const {
   DOM: { input, select, textarea },
 } = React;
@@ -17,12 +18,7 @@ const ProjectForm = (props) => {
       <div>
         <label>User</label>
         <div>
-          <Field name="user" component={select}>
-            <option></option>
-            <option value="ff0000">user #1</option>
-            <option value="00ff00">user #2</option>
-            <option value="0000ff">user #3</option>
-          </Field>
+          <Users />
         </div>
       </div>
       <div>
